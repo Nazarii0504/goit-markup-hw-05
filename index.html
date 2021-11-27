@@ -22,7 +22,7 @@
         <nav class="navig">
             <ul class="navig-list">
                 <li class="navig-list-item">
-                    <a class="navig-link" href="">Студия</a></li>
+                    <a class="navig-link current current-studio" href="">Студия</a></li>
                 <li class="navig-list-item">
                     <a class="navig-link" href="./portfolio.html" >Портфолио</a></li>
                 <li class="navig-list-item">
@@ -47,7 +47,7 @@
     <main>
         <section class="upmain ">
             <h1 class="upmain-title">Эффективные решения<br> для вашего бизнеса</h1>
-            <button type="button" class="upmain-button">Заказать услугу</button>
+            <button type="button" class="upmain-button" data-modal-open>Заказать услугу</button>
         </section>
 
 
@@ -354,7 +354,17 @@
         </div>
     </div>
     </footer>
-
+    <div class="backdrop backdrop-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-btn" type="button" data-modal-close>
+            <svg class="modal-svg">
+              <use href="./images/icons.svg#close-backdrop"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
