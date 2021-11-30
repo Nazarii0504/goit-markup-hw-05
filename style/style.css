@@ -373,7 +373,7 @@ button {
   padding-bottom: 30px;
 }
 
-.team-block:not(:last-child): {
+.team-block:not(:last-child) {
   margin-right: 10px;
 }
 .team-block-link {
@@ -410,6 +410,8 @@ button {
   border: 1px solid #afb1b8;
   fill: #afb1b8;
 border-radius: 4px;
+transition: fill 250ms var(--animation-cubic-bezier),
+border-color 250ms var(--animation-cubic-bezier);
 }
 .section-client {
   margin-bottom: 50px;
@@ -579,7 +581,7 @@ align-items:baseline;
 }
 .gallery-list {
   width: calc((100% - 60px) / 3);
-  border: 1px solid transparent;
+  
   background-color: var(--third-text-color);
   transition: box-shadow 250ms var(--animation-cubic-bezier);
 }
@@ -598,6 +600,7 @@ align-items:baseline;
 
 .gallery-inner {
   position: relative;
+  overflow: hidden;
   }
 
 .gallery-block {
